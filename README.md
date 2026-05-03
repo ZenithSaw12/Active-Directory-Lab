@@ -39,8 +39,10 @@ Using **Kali Linux**, I launched an automated brute-force attack against the Win
 * **Tool:** Crowbar
 * **Wordlist:** `rockyou.txt`
 
+```bash
 # Command used for RDP brute force:
 crowbar -b rdp -s [Target_IP]/32 -u [Target_Username] -C rockyou.txt
+```
 
 > **Ref 3: Kali Attack Terminal**
 
@@ -54,6 +56,11 @@ To validate my detection capabilities, I installed Atomic Red Team (ART) on the 
 ### 4. SIEM Analysis in Splunk
 
 Once telemetry was ingested via the Splunk Universal Forwarder, I performed targeted searches to identify Indicators of Compromise (IoCs). I specifically investigated local account creation—a primary tactic for maintaining persistence.
+
+**Search Query:**
+```spl
+index=endpoint NewLocalUser
+```
 
 > **Ref 5: Splunk Search Results**
 
