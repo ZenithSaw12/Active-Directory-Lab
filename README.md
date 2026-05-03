@@ -42,10 +42,10 @@ I organized the `zenith.local` domain into functional Organizational Units (OUs)
 
 To ensure the Windows 10 workstation could communicate with the `zenith.local` domain, I configured the primary DNS to point to the Domain Controller.
 
-> !(images/domain.png)
+> ![IPv4](images/domain.png)
 
 Verifying connection with cmd
-> !(images/dns.png)
+> ![cmd](images/dns.png)
 
 ---
 
