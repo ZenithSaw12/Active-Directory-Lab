@@ -17,7 +17,7 @@ The goal of this project was to establish a controlled corporate network environ
 
 
 
-> **Ref 1: Network Diagram**
+> **Network Diagram**
 > ![Diagram](images/ActiveDirectory.drawio.png "Network Topology Diagram")
 
 ---
@@ -50,7 +50,7 @@ Using **Kali Linux**, I launched an automated brute-force attack against the Win
 crowbar -b rdp -u tsmith -C passwords.txt -s 192.168.10.100/32
 ```
 
-> **Ref 3: Kali Attack Terminal**
+> **Kali Attack Terminal**
 > ![Kali Attack](images/brute.png)
 
 
@@ -63,8 +63,8 @@ To validate my detection capabilities, I installed Atomic Red Team (ART) on the 
 Invoke-AtomicTest T1136.001
 ```
 
-> **Ref 4: ART Execution**
-> ![Kali Attack](images/brute.png)
+> **ART Execution**
+> ![Output](images/output.png)
 > 
 ### 4. SIEM Analysis in Splunk
 
@@ -75,7 +75,7 @@ Once telemetry was ingested via the Splunk Universal Forwarder, I performed targ
 index=endpoint NewLocalUser
 ```
 
-> **Ref 5: Splunk Search Results**
+> **Splunk Search Results**
 
 # Lessons Learned
 
