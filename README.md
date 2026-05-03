@@ -105,7 +105,7 @@ index=endpoint NewLocalUser
 
 # Contact & Links
 
-- LinkedIn: [Your LinkedIn Link]
+- LinkedIn: www.linkedin.com/in/zenithsaw
 
-- GitHub: [Your GitHub Profile Link]
+- GitHub: https://github.com/ZenithSaw12
 
