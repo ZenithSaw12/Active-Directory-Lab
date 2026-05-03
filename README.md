@@ -53,6 +53,14 @@ crowbar -b rdp -u tsmith -C passwords.txt -s 192.168.10.100/32
 > **Kali Attack Terminal**
 > ![Kali Attack](images/brute.png)
 
+**Telemetry Generated**
+> **Splunk**
+> ```spl
+> index=endpoint tsmith
+> ```
+>
+> **Checking Event Codes**
+> ![Kali Attack](images/brute.png)
 
 ### 3. Telemetry Generation (Atomic Red Team)
 
