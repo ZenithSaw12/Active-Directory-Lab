@@ -76,6 +76,7 @@ To validate my detection capabilities, I installed Atomic Red Team (ART) on the 
 
 **Example Atomic Test**
 ```powershell
+# This is a test for Create Account: Local Account
 Invoke-AtomicTest T1136.001
 ```
 
@@ -92,7 +93,8 @@ index=endpoint NewLocalUser
 ```
 
 > **Splunk Search Results**
-
+> 
+> ![NewLocalUser](images/new.png)
 # Lessons Learned
 
 - DNS Dependency: Active Directory is entirely dependent on DNS; misconfigured DNS is the most common reason for domain-join failures.
