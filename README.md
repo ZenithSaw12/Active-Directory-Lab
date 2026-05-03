@@ -18,7 +18,7 @@ The goal of this project was to establish a controlled corporate network environ
 
 
 > **Ref 1: Network Diagram**
-> ![Diagram](ActiveDirectory.drawio.png "Network Topology Diagram")
+> ![Diagram](images/ActiveDirectory.drawio.png "Network Topology Diagram")
 
 ---
 
@@ -29,8 +29,13 @@ I deployed four virtual machines in an isolated internal network to simulate a c
 * **Windows Server:** Promoted to a Domain Controller (DC). I established a mock corporate hierarchy using **Organizational Units (OUs)** and populated them with test users.
 * **Windows 10 Target:** Joined to the domain. **Crucial Step:** I manually configured the Target VM's DNS settings to point directly to the DC's static IP. Without this, the workstation would fail to resolve the domain and authentication would break.
 
-> **Ref 2: AD Users & Computers Setup**
-> *[Insert screenshot here showing your OUs and test accounts in Active Directory]*
+I organized the `zenith.local` domain into functional Organizational Units (OUs) to simulate a realistic corporate hierarchy. This allows for granular application of Group Policy Objects (GPOs) and better tracking of department-specific telemetry.
+
+**HR OU:**
+![HR OU Setup](images/hr-ou.png)
+
+**IT OU:**
+![IT OU Setup](images/it-ou.png)
 
 ---
 
