@@ -31,11 +31,11 @@ I deployed four virtual machines in an isolated internal network to simulate a c
 
 I organized the `zenith.local` domain into functional Organizational Units (OUs) to simulate a realistic corporate hierarchy. This allows for granular application of Group Policy Objects (GPOs) and better tracking of department-specific telemetry.
 
-**HR OU:**
-![HR OU Setup](images/hr-ou.png)
+> **HR OU:**
+> ![HR OU Setup](images/hr-ou.png)
 
-**IT OU:**
-![IT OU Setup](images/it-ou.png)
+> **IT OU:**
+> ![IT OU Setup](images/it-ou.png)
 
 ---
 
@@ -51,6 +51,7 @@ crowbar -b rdp -u tsmith -C passwords.txt -s 192.168.10.100/32
 ```
 
 > **Ref 3: Kali Attack Terminal**
+> ![Kali Attack](images/brute.png)
 
 
 ### 3. Telemetry Generation (Atomic Red Team)
