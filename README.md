@@ -6,7 +6,7 @@ The goal of this project was to establish a controlled corporate network environ
 ## Tools & Technologies
 * **Virtualization:** Oracle VirtualBox
 * **SIEM:** Splunk Enterprise (Log Ingestion & Analysis)
-* **Directory Services:** Windows Server 2022 (Active Directory / Domain Controller)
+* **Directory Services:** Windows Server 2025 (Active Directory / Domain Controller)
 * **Attacker OS:** Kali Linux (Crowbar, RockYou.txt)
 * **Endpoints:** Windows 10 (Target Workstation)
 * **Automation/Testing:** Atomic Red Team (Telemetry Generation)
