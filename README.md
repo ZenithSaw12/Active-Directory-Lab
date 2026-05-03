@@ -18,6 +18,7 @@ The goal of this project was to establish a controlled corporate network environ
 
 
 > **Network Diagram**
+> 
 > ![Diagram](images/ActiveDirectory.drawio.png "Network Topology Diagram")
 
 ---
@@ -32,9 +33,11 @@ I deployed four virtual machines in an isolated internal network to simulate a c
 I organized the `zenith.local` domain into functional Organizational Units (OUs) to simulate a realistic corporate hierarchy. This allows for granular application of Group Policy Objects (GPOs) and better tracking of department-specific telemetry.
 
 > **HR OU:**
+> 
 > ![HR OU Setup](images/hr-ou.png)
 
 > **IT OU:**
+> 
 > ![IT OU Setup](images/it-ou.png)
 
 ---
@@ -51,6 +54,7 @@ crowbar -b rdp -u tsmith -C passwords.txt -s 192.168.10.100/32
 ```
 
 > **Kali Attack Terminal**
+> 
 > ![Kali Attack](images/brute.png)
 
 **Telemetry Generated**
@@ -60,7 +64,11 @@ crowbar -b rdp -u tsmith -C passwords.txt -s 192.168.10.100/32
 > ```
 >
 > **Checking Event Codes**
-> ![Kali Attack](images/brute.png)
+> 
+> ![Event Codes](images/eventCodes.png)
+>
+> Code 4625 corresponds to: "An account failed to log on."
+> We notice 20 failed attempts as the passwords.txt used in the brute force attack had 21 passwords, with the last one being the correct one.
 
 ### 3. Telemetry Generation (Atomic Red Team)
 
