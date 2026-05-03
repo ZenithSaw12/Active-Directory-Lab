@@ -42,15 +42,17 @@ I organized the `zenith.local` domain into functional Organizational Units (OUs)
 
 To ensure the Windows 10 workstation could communicate with the `zenith.local` domain, I configured the primary DNS to point to the Domain Controller.
 
-> ![IPv4](images/domain.png)
+> <img src="images/domain.png" width="30%" />
 
 Verifying connection with cmd
-> ![cmd](images/dns.png)
+> <img src="images/dns.png" width="40%" />
 
 ---
 
 ### 2. Attacking the Domain (Brute Force)
 Using **Kali Linux**, I launched an automated brute-force attack against the Windows 10 workstation to simulate a credential-guessing scenario.
+To simulate a realistic corporate attack surface, I enabled Remote Desktop Protocol (RDP) on the Windows 10 target. This provided the necessary entry point for the subsequent brute force simulation.
+
 * **Tool:** Crowbar
 * **Wordlist:** `rockyou.txt`
 
