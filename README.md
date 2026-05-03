@@ -58,8 +58,14 @@ crowbar -b rdp -u tsmith -C passwords.txt -s 192.168.10.100/32
 
 To validate my detection capabilities, I installed Atomic Red Team (ART) on the target machine. This allowed me to execute "Atomics" mapped to the MITRE ATT&CK matrix, generating high-fidelity logs for analysis.
 
-> **Ref 4: ART Execution**
+**Example Atomic Test**
+```powershell
+Invoke-AtomicTest T1136.001
+```
 
+> **Ref 4: ART Execution**
+> ![Kali Attack](images/brute.png)
+> 
 ### 4. SIEM Analysis in Splunk
 
 Once telemetry was ingested via the Splunk Universal Forwarder, I performed targeted searches to identify Indicators of Compromise (IoCs). I specifically investigated local account creation—a primary tactic for maintaining persistence.
