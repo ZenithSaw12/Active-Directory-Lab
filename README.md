@@ -47,6 +47,16 @@ To ensure the Windows 10 workstation could communicate with the `zenith.local` d
 Verifying connection with cmd
 > <img src="images/dns.png" width="40%" />
 
+#### Log Pipeline & Telemetry
+
+To achieve full visibility of the attack lifecycle, I implemented the following telemetry pipeline:
+
+- Endpoint Monitoring: I installed Sysmon on the Windows 10 target using a custom configuration file (sysmonconfig.xml). This configuration optimizes log collection by filtering out routine system noise.
+
+- Data Transport: Deployed the Splunk Universal Forwarder (UF) on the Windows 10 target.
+
+- Configuration: Configured `inputs.conf` on the UF to monitor the Sysmon Event Channel and forward logs to the Splunk Indexer on Port 9997.
+
 ---
 
 ### 2. Attacking the Domain (Brute Force)
